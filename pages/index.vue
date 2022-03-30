@@ -14,6 +14,16 @@
             </li>
         </ul>
     </div>
+
+    <div>
+        <ul>
+            <li v-for="user in users2" :key="user.id">
+                {{ user.name }}
+            </li>
+        </ul>
+    </div>
+
+    <div></div>
 </template>
 
 <script setup>
@@ -25,5 +35,7 @@
         fetch('https://jsonplaceholder.typicode.com/users')
         .then(response =>  response.json())
         .then(data =>  users.value = data)
-    }) 
+    })
+
+    const { data: users2 } = await useAsyncData('users2', () => $fetch('https://jsonplaceholder.typicode.com/users'))
 </script>
