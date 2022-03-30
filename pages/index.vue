@@ -30,6 +30,8 @@
             </li>
         </ul>
     </div>
+
+    <div>{{ user.name }}</div>
 </template>
 
 <script setup>
@@ -46,4 +48,6 @@
     const { data: users2 } = await useAsyncData('users2', () => $fetch('https://jsonplaceholder.typicode.com/users'))
 
     const { data: users3 } = await useFetch('https://jsonplaceholder.typicode.com/users')
+
+    const { data: user } = await useFetch('https://jsonplaceholder.typicode.com/users/1', { pick: ['id', 'name', 'email'] })
 </script>
