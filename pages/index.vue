@@ -1,4 +1,4 @@
-<template>
+<!-- <template>
 <button class="px-5 py-2 border rounded hover:bg-teal-200">Hi 👏</button>
     <div>
         <div>This is the main page</div>
@@ -59,4 +59,6 @@
     const { data: user } = await useFetch('https://jsonplaceholder.typicode.com/users/1', { pick: ['id', 'name', 'email'] })
 
     const { data : weather } = await useFetch('/api/weather')
-</script>
+</script> -->
+
+
