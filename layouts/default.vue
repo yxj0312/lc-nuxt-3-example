@@ -13,7 +13,7 @@
 </template> -->
 
 <template>
-  <div class="bg-gray-300 min-h-screen text-gray-900">
+  <div class="bg-gray-100 min-h-screen text-gray-900">
     <Title>{{ title }}</Title>
     <nav class="bg-white shadow text-lg px-6 py-6">
       <div class="container mx-auto flex items-center justify-between px-6">
