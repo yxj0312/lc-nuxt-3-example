@@ -10,6 +10,11 @@ definePageMeta({
 
 <template>
     <div class="container mx-auto w-1/2 py-8">
+        <Title>About | {{ title }}</Title>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae quos pariatur molestiae enim, impedit blanditiis harum cupiditate ipsam reprehenderit! Blanditiis fugit accusamus nobis ad laudantium temporibus dolorum pariatur aliquid molestias.
     </div>
 </template>
+
+<script setup>
+    const title = useState('title')
+</script>

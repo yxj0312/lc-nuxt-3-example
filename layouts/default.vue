@@ -40,7 +40,7 @@
 </template>
 
 <script setup>
-const title = 'Nuxt 3 Blog'
+const title = useState('title', () => 'Nuxt 3 Blog')
 </script>
 
 <style>
